@@ -3,14 +3,20 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
+
+import { CardModule } from 'primeng/card';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PasswordGeneratorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardModule
   ],
   providers: [
     provideClientHydration()
