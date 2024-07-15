@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './password-generator.component.scss'
 })
 export class PasswordGeneratorComponent {
-
+  passwordText = "dfdvfd#423f";
+  value = 10;
+  checked = false;
 }

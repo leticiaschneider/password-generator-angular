@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 
 import { CardModule } from 'primeng/card';
+import { SliderModule } from 'primeng/slider';
+import { FormsModule } from '@angular/forms';
+import { CheckboxModule } from 'primeng/checkbox';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { CardModule } from 'primeng/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CardModule
+    FormsModule,
+    CardModule,
+    SliderModule,
+    CheckboxModule,
+    ButtonModule
   ],
   providers: [
     provideClientHydration()
