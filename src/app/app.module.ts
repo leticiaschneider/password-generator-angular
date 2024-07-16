@@ -10,6 +10,7 @@ import { SliderModule } from 'primeng/slider';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
+import { TooltipModule } from 'primeng/tooltip';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ButtonModule } from 'primeng/button';
     CardModule,
     SliderModule,
     CheckboxModule,
-    ButtonModule
+    ButtonModule,
+    TooltipModule
   ],
   providers: [
     provideClientHydration()

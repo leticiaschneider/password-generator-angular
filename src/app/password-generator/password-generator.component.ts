@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class PasswordGeneratorComponent {
   form: FormGroup;
+  copySuccess: boolean = false;
 
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
@@ -52,5 +53,17 @@ export class PasswordGeneratorComponent {
     }
 
     this.form.get('passwordText')?.setValue(password);
+  }
+
+  copyToClipboard() {
+    navigator.clipboard.writeText(this.form.get('passwordText')?.value).then(
+      () => {
+        this.copySuccess = true;
+        console.log('Text copied successfully!');
+      },
+      (err) => {
+        console.error('Failed to copy text: ', err);
+      }
+    );
   }
 }
