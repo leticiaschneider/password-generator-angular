@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class PasswordGeneratorComponent {
   form: FormGroup;
+
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       passwordText: [""],
@@ -20,6 +21,36 @@ export class PasswordGeneratorComponent {
   }
 
   generatePassword() {
-    // lógica para gerar a senha
+    const length = this.form.get('passwordLength')?.value;
+    const includeUppercase = this.form.get('includeUppercase')?.value;
+    const includeLowercase = this.form.get('includeLowercase')?.value;
+    const includeNumbers = this.form.get('includeNumbers')?.value;
+    const includeSymbols = this.form.get('includeSymbols')?.value;
+
+    let charset = '';
+    if (includeUppercase) {
+      charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    }
+    if (includeLowercase) {
+      charset += 'abcdefghijklmnopqrstuvwxyz';
+    }
+    if (includeNumbers) {
+      charset += '0123456789';
+    }
+    if (includeSymbols) {
+      charset += '!@#$%^&*()_+[]{}|;:,.<>?';
+    }
+
+    if (!charset) {
+      charset = 'abcdefghijklmnopqrstuvwxyz';
+    }
+
+    let password = '';
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * charset.length);
+      password += charset[randomIndex];
+    }
+
+    this.form.get('passwordText')?.setValue(password);
   }
 }
