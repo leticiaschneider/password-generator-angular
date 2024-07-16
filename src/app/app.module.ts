@@ -7,7 +7,7 @@ import { PasswordGeneratorComponent } from './password-generator/password-genera
 
 import { CardModule } from 'primeng/card';
 import { SliderModule } from 'primeng/slider';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 
@@ -20,7 +20,7 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
     CardModule,
     SliderModule,
     CheckboxModule,
