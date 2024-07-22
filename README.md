@@ -17,7 +17,7 @@ You can try out the password generator live at: [Password Generator Angular]([ht
 
 ## Installation
 
-1. Clone the repository: `git clone [https://github.com/leticiaschneider/vue-calculator.git](https://github.com/leticiaschneider/password-generator-angular.git)`
+1. Clone the repository: `git clone https://github.com/leticiaschneider/password-generator-angular.git`
 2. Navigate to the project folder: `cd password-generator-angular`
 3. Install dependencies: `npm install`
 4. Run the app: `ng run serve`
