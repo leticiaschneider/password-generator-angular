@@ -13,7 +13,7 @@ This project was built using the following technologies:
 
 ## Demo
 
-You can try out the password generator live at: [Password Generator Angular]([http://leticiaschneider.github.io/vue-calculator/](https://leticiaschneider.github.io/password-generator-angular/).
+You can try out the password generator live at: [Password Generator Angular]([http://leticiaschneider.github.io/vue-calculator/](https://leticiaschneider.github.io/password-generator-angular/ ).
 
 ## Installation
 
