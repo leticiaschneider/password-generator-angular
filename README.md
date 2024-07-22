@@ -1,27 +1,29 @@
-# PasswordGeneratorAngular
+# ✍️ Password Generator Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+A simple and customizable password generator built with Angular. You can easily generate strong passwords by specifying the desired length and choosing to include uppercase letters, lowercase letters, numbers, and symbols.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
 
-## Code scaffolding
+This project was built using the following technologies:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular CLI: 17.3.8
+- PrimeNG: For UI components.
+- PrimeFlex: For CSS utilities.
 
-## Build
+## Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+You can try out the password generator live at: [Password Generator Angular]([http://leticiaschneider.github.io/vue-calculator/](https://leticiaschneider.github.io/password-generator-angular/).
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository: `git clone [https://github.com/leticiaschneider/vue-calculator.git](https://github.com/leticiaschneider/password-generator-angular.git)`
+2. Navigate to the project folder: `cd password-generator-angular`
+3. Install dependencies: `npm install`
+4. Run the app: `ng run serve`
 
-## Running end-to-end tests
+Visit `http://localhost:8080/` in your browser to see the app in action.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ✨ Contact
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Letícia Araújo Schneider - leticia.schneider@gmail.com
